@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todo-style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>ToDo list<span id="count"></span></h1>
+        <div class="input-wrapper">
+            <input type="text" id="add-input" maxlength="30">
+            <button id="add-task">Add todo</button>
+        </div>
+
+        <h2>Task for the day</h2>
+
+        <div class="select">
+            <label>select your tasks</label>
+            <select class="filter-todo">
+                <option id="show-all">all</option>
+                <option id="show-completed">Completed</option>
+                <option id="show-incompleted">Incompleted</option>
+            </select>
+        </div>
+        
+        <div class="task-show">
+            <ul class="task-list"></ul>
+        </div>
+        
+    </div>
+
+    <script src="todo-script.js"></script>
+</body> 
+</html>
